@@ -1,0 +1,341 @@
+:root {
+  --main-color-blue: #6a57f4;
+  --main-color-blue-darker: #211290;
+}
+
+body {
+  background-color: #eeeaff;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.blue {
+  color: var(--main-color-blue);
+  font-weight: bold;
+  font-size: larger;
+}
+
+.btn {
+  border-radius: 50px !important;
+}
+
+.blueBtn {
+  color: white;
+  background-color: var(--main-color-blue);
+}
+
+.blueBtn:hover {
+  color: white;
+  background-color: var(--main-color-blue-darker);
+}
+
+#tobNav {
+  background-color: var(--main-color-blue);
+  font-weight: 500;
+}
+
+nav ul .nav-link {
+  font-weight: 700;
+  /* font-size: larger; */
+}
+
+.offcanvas{
+    width: 310px !important;
+    background-color: #dcd7ff;
+}
+
+.nav-link:hover {
+  color: var(--main-color-blue);
+}
+
+.dropdown-item:focus,
+.dropdown-item:hover {
+  background-color: transparent;
+}
+
+#SearchBtn {
+  width: auto;
+  height: 35px;
+}
+
+#SearchBtn:hover {
+  background-color: var(--main-color-blue-darker);
+}
+
+.feature-item {
+  background-color: white;
+  transition: 0.3s ease-in-out;
+}
+
+.feature-item:hover {
+  background-color: var(--main-color-blue);
+  transition: 0.3s ease-in-out;
+  color: white;
+  cursor: pointer;
+}
+
+.categories {
+  /* margin-left: 3px; */
+  border-radius: 15px;
+  transition: 0.3s;
+}
+
+.categories:hover {
+  color: white;
+  cursor: pointer;
+}
+
+.green-hover {
+  background-color: #aee2d7;
+}
+
+.green-hover:hover {
+  background-color: #4cc082;
+}
+
+.gray-hover {
+  background-color: #cedbea;
+}
+
+.gray-hover:hover {
+  background-color: #6c757d;
+}
+
+.orange-hover {
+  background-color: #fed592;
+}
+
+.orange-hover:hover {
+    background-color: #f9b13d;
+}
+
+.blue-hover{
+    background-color: #a7b0ff;
+}
+
+.blue-hover:hover{
+    background-color: #505ae2;
+}
+
+.brown-hover{
+    background-color: #efc595;
+}
+
+.brown-hover:hover{
+    background-color: #a6661c;
+}
+
+.pink-hover{
+    background-color: #ffccff;
+    
+}
+
+.pink-hover:hover{
+    background-color: #50024e;
+    
+}
+
+.red-hover {
+  background-color: #ffd1c9;
+}
+
+.red-hover:hover {
+  background-color: #ec6c5a;
+}
+
+.card-hed {
+  font-size: small;
+  font-weight: bold;
+}
+
+.card-info {
+  font-size: large;
+  font-weight: bold;
+  /* text-decoration: none; */
+}
+
+.card-info-link:hover {
+  color: var(--main-color-blue) !important;
+}
+
+.card-badge {
+  width: auto;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  /* background-color: rgb(255, 98, 0); */
+  /* background-color: var(--main-color-blue); */
+}
+
+/* .view-st{
+    margin: 0 35px;
+}
+
+.view-text{
+    border: solid red;
+} */
+
+
+
+
+
+#customCarousel{
+    background-color: #dcd7ff;
+    /* height: 550px !important; */
+}
+
+.carousel-item {
+  /* height: 75vh;  */
+  /* border: red solid; */
+  padding: 35px !important;
+}
+
+.carousel-item p {
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+.carousel-indicators button {
+    width: 30px; /* Make the indicators look like dashes */
+    height: 5px; /* Adjust the height for a thinner look */
+    border-radius: 5px; /* Remove rounding for dashes */
+    background-color: var(--main-color-blue); /* Default color */
+    margin: 5px; /* Space between the indicators */
+    opacity: 0.5; /* Default opacity */
+  }
+  
+  .carousel-indicators button.active {
+    background-color: var(--main-color-blue-darker); /* Change color of active indicator */
+    opacity: 1; /* Make the active indicator fully opaque */
+  }
+  
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-image: none; /* Remove default arrow icon */
+  /* background-color: #9088cf;  */
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel-control-prev-icon::after {
+  content: '❮'; /* Custom previous icon (left arrow) */
+  font-size: 20px;
+  color: var(--main-color-blue-darker);
+}
+
+.carousel-control-next-icon::after {
+  content: '❯'; /* Custom next icon (right arrow) */
+  font-size: 20px;
+  color: var(--main-color-blue-darker);
+}
+
+
+
+.ddd{
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between !important; */
+    /* background-color: #eff8ff; */
+    width: 950px;
+    margin-bottom: 55px;
+}
+
+.fff{
+    display: flex;
+    align-items: center;
+    justify-content: center !important;
+    /* border: solid; */
+    margin-top: 35px;
+}
+
+@media (max-width: 950px) {
+    .ddd{
+        flex-direction: column !important;
+        /* background-color: #eff8ff; */
+    }
+}
+
+
+.wite-card{
+    display: flex;
+    justify-content: center;
+    background-color: #eff8ff;
+    margin-left: 10px;
+    border-radius: 10px;
+}
+
+.teacher-image{
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.teacher-image-zoom:hover{
+    scale: 1.15;
+    transition: 0.6s ease-out;
+    position: relative;
+    overflow: hidden;
+}
+
+.ssss {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 20%;
+    filter: blur(1px); /* Start with a high blur */
+    transition: filter .6s ease-out, opacity .6s ease-out, visibility 0s .6s;
+}
+
+.teacher-image-zoom:hover ~ .ssss {
+    opacity: 1;
+    visibility: visible;
+    filter: blur(0px); /* Remove blur on hover */
+    transition: filter .6s ease-out, opacity .6s ease-out, visibility 0s;
+}
+
+
+
+.ssss:hover{
+    
+    opacity: 1;
+    visibility: visible;
+    filter: blur(0px); /* Scale on hover */
+    transition: transform .6s ease-out, opacity .6s ease-out;
+}
+
+.register{
+    width: 100% !important;
+    padding: 4%;
+}
+
+
+.footer-link{
+    text-decoration: none;
+    color: var(--main-color-blue);
+    font-size: large;
+    font-weight: bold;
+    /* color: #4937d1; */
+}
+
+.footer-link:hover{
+    color: var(--main-color-blue-darker);
+}
+
+.icon {
+    color: #333; /* Default color */
+    font-size: 30px; /* Icon size */
+    transition: color 0.3s ease; /* Smooth transition */
+}
+
+.icon:hover {
+    color: var(--main-color-blue); /* Color on hover */
+}
